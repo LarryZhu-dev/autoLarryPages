@@ -4,8 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>autoLarryPages</title>
+    <link rel="stylesheet" href="./dependens/autolog/autolog.css" />
+    <link rel="stylesheet" href="./dependens/index.css" />
   </head>
   <body>
-    1111
+    <div class="autologBox">
+      <div class="logo">
+        <a href="https://github.com/LarryZhu-dev/autolog.js" target="_blank">
+          <img src="./dependens/autolog/autolog.svg" alt="autoLarryPages" />
+        </a>
+      </div>
+      <div class="pluginInfos">
+        <span>autolog.js 一款轻量化小弹窗插件 1.40kb(gzip)</span>
+      </div>
+      <div class="customText">
+        <input type="text" placeholder="请输入文本" id="text" />
+        <input type="text" placeholder="请输入时长" id="time" />
+      </div>
+      <div class="buttons">
+        <button class="success" onclick="module.showLog()">素框</button>
+        <button class="success" onclick="module.showLog('success')">
+          成功
+        </button>
+        <button class="error" onclick="module.showLog('error')">错误</button>
+        <button class="warn" onclick="module.showLog('warn')">警告</button>
+        <button class="info" onclick="module.showLog('info')">公告</button>
+      </div>
+      <div class="install">
+        <div class="codeBlock">
+          <span>npm install autolog.js</span>
+          <button onclick="module.copy()">copy</button>
+        </div>
+      </div>
+    </div>
   </body>
+  <script>
+    const module = {};
+  </script>
+  <script type="module">
+    import autolog from "./dependens/autolog/index.js";
+    autolog.log("hi,autoLarryPages", "info");
+    const EggTexts = [
+      "敢不敢跟我比划比划",
+      "你小子你小子你小子",
+      "让你见识见识什么叫黑手",
+    ];
+    function showLog(logType) {
+      radomEgg();
+      let text = document.getElementById("text").value;
+      let time = document.getElementById("time").value;
+      autolog.log(text || "Hello World", logType || "", time || 2500);
+    }
+    function copy() {
+      const code = document.querySelector(".codeBlock span").innerText;
+      const input = document.createElement("input");
+      input.value = code;
+      document.body.appendChild(input);
+      input.select();
+      document.execCommand("copy");
+      document.body.removeChild(input);
+      autolog.log("复制成功", "success", 2000);
+    }
+    function radomEgg() {
+      let radomNumber1to100 = Math.floor(Math.random() * 100 + 1);
+      if (radomNumber1to100 > 99) {
+        for (let i = 0; i < radomNumber1to100; i++) {
+          let radomText = Math.floor(Math.random() * 3);
+          setTimeout(() => {
+            autolog.log(EggTexts[radomText], "info", 2500);
+          }, 10 * i);
+        }
+      }
+    }
+    module.showLog = showLog;
+    module.copy = copy;
+  </script>
 </html>

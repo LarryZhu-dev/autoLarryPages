@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #1f1f1f;
+  overflow: hidden;
+}
+button {
+  background: none;
+  border: none;
+  outline: none;
+  background: #eee;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+input {
+  background: #eee;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  width: 120px;
+}
+button:hover {
+  opacity: 0.9;
+}
+.autologBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 300px;
+}
+.pluginInfos {
+  color: #999;
+}
+.customText {
+  color: #fff;
+  font-size: 20px;
+}
+.autologBox .logo img {
+  width: 300px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.codeBlock {
+  background: #181818;
+  color: #cccccc;
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+}
