@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 body {
   background: #1f1f1f;
@@ -28,7 +29,8 @@ input {
 button:hover {
   opacity: 0.9;
 }
-.autologBox {
+.autologBox,
+.autofitBox {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -61,4 +63,33 @@ button:hover {
   align-items: flex-start;
   justify-content: flex-start;
   gap: 12px;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.main a {
+  color: #fff;
+}
+.productionList {
+  display: flex;
+  gap: 18px;
+  padding: 60px 40px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.logo img {
+  width: 160px;
+}
+.readme {
+  color: #fff;
+  padding-top: 200px;
 }

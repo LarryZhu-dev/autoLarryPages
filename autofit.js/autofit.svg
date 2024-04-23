@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 280 280">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_autofit.js_5);
+      }
+
+      .cls-2 {
+        fill: url(#_autofit.js_8);
+      }
+
+      .cls-3 {
+        fill: url(#_autofit.js_47);
+      }
+
+      .cls-4 {
+        fill: url(#_autofit.js_61);
+      }
+
+      .cls-5 {
+        fill: url(#_autofit.js_7);
+      }
+    </style>
+    <linearGradient id="_autofit.js_5" data-name="autofit.js 5" x1="0" y1="46.67" x2="93.33" y2="46.67" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#49c7ff"/>
+      <stop offset="1" stop-color="#916bfe"/>
+    </linearGradient>
+    <linearGradient id="_autofit.js_7" data-name="autofit.js 7" x1="186.67" y1="46.67" x2="280" y2="46.67" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#847bfe"/>
+      <stop offset="1" stop-color="#906cfe"/>
+    </linearGradient>
+    <linearGradient id="_autofit.js_47" data-name="autofit.js 47" x1="186.67" y1="233.33" x2="280" y2="233.33" gradientUnits="userSpaceOnUse">
+      <stop offset=".28" stop-color="#8e6efe"/>
+      <stop offset=".46" stop-color="#9861fe"/>
+      <stop offset=".85" stop-color="#ad48fe"/>
+    </linearGradient>
+    <linearGradient id="_autofit.js_8" data-name="autofit.js 8" x1="0" y1="233.33" x2="93.33" y2="233.33" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#817ffe"/>
+      <stop offset="1" stop-color="#9c5dfe"/>
+    </linearGradient>
+    <linearGradient id="_autofit.js_61" data-name="autofit.js 61" x1="140.93" y1="209.85" x2="140.93" y2="81.2" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffdf41"/>
+      <stop offset=".57" stop-color="#ffbd19"/>
+      <stop offset="1" stop-color="#ffa800"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-1" d="M93.33,9.06v.54c0,5-4.06,9.06-9.06,9.06H28.66c-5,0-9.06,4.06-9.06,9.06v56.54c0,5-4.06,9.06-9.06,9.06h-1.48C4.06,93.33,0,89.28,0,84.27V9.06C0,4.06,4.06,0,9.06,0H84.27C89.28,0,93.33,4.06,93.33,9.06Z"/>
+  <path class="cls-5" d="M270.94,93.33h-.54c-5,0-9.06-4.06-9.06-9.06V28.66c0-5-4.06-9.06-9.06-9.06h-56.54c-5,0-9.06-4.06-9.06-9.06v-1.48c0-5,4.06-9.06,9.06-9.06h75.21c5,0,9.06,4.06,9.06,9.06V84.27c0,5-4.06,9.06-9.06,9.06Z"/>
+  <path class="cls-3" d="M186.67,270.94v-.54c0-5,4.06-9.06,9.06-9.06h55.61c5,0,9.06-4.06,9.06-9.06v-56.54c0-5,4.06-9.06,9.06-9.06h1.48c5,0,9.06,4.06,9.06,9.06v75.21c0,5-4.06,9.06-9.06,9.06h-75.21c-5,0-9.06-4.06-9.06-9.06Z"/>
+  <path class="cls-2" d="M9.06,186.67h.54c5,0,9.06,4.06,9.06,9.06v55.61c0,5,4.06,9.06,9.06,9.06h56.54c5,0,9.06,4.06,9.06,9.06v1.48c0,5-4.06,9.06-9.06,9.06H9.06c-5,0-9.06-4.06-9.06-9.06v-75.21c0-5,4.06-9.06,9.06-9.06Z"/>
+  <path class="cls-4" d="M123.43,90.26v78.37c0,5-4.06,9.06-9.06,9.06h-9.06c-5,0-9.06-4.06-9.06-9.06V90.26c0-5-4.06-9.06-9.06-9.06H21.19c-5,0-9.06,4.06-9.06,9.06v110.51c0,5,4.06,9.06,9.06,9.06h0c5,0,9.06-4.06,9.06-9.06v-30.39c0-5,4.06-9.06,9.06-9.06h9.05c5,0,9.06,4.06,9.06,9.06v30.39c0,5,4.06,9.06,9.06,9.06h10.35s73.16,.01,73.16,.01c5,0,9.06-4.06,9.06-9.06V122.42c0-5,4.06-9.06,9.06-9.06h9.05c5,0,9.06,4.06,9.06,9.06v78.37c0,5,4.06,9.06,9.06,9.06h65.38c5,0,9.06-4.06,9.06-9.06V90.26c0-5-4.06-9.06-9.06-9.06H132.49c-5,0-9.06,4.06-9.06,9.06Zm-75.06,54.87h-9.05c-5,0-9.06-4.06-9.06-9.06v-29.64c0-5,4.06-9.06,9.06-9.06h9.05c5,0,9.06,4.06,9.06,9.06v29.64c0,5-4.06,9.06-9.06,9.06Zm176.08,23.49v-46.21c0-5,4.06-9.06,9.06-9.06h7.76c5,0,9.06,4.06,9.06,9.06v46.21c0,5-4.06,9.06-9.06,9.06h-7.76c-5,0-9.06-4.06-9.06-9.06Z"/>
+</svg>

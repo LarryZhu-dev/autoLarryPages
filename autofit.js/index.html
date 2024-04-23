@@ -4,8 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>autofit.js</title>
+    <link rel="stylesheet" href="../dependens/index.css" />
+    <link rel="shortcut icon" href="./autofit.svg" />
+    <script src="https://cdn.jsdelivr.net/npm/autofit.js@3.1.0/autofit.min.js"></script>
   </head>
   <body>
-    1111
+    <div class="autofitBox">
+      <div class="logo">
+        <a href="https://github.com/LarryZhu-dev/autofit.js" target="_blank">
+          <img src="./autofit.svg" alt="autoLarryPages" />
+        </a>
+      </div>
+      <div class="pluginInfos">
+        <span>autofit.js 迄今为止最易用的自适应工具 2.17kb(gzip)</span>
+      </div>
+      <div class="install" onclick="module.copy()">
+        <div class="codeBlock">
+          <span>autofit.init()</span>
+          <span>// 即刻开用</span>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
+<script>
+  const module = {};
+</script>
+<script type="module">
+  import autolog from "../dependens/autolog/index.js";
+  function copy() {
+    const code = "autofit.init()";
+    const input = document.createElement("input");
+    input.value = code;
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand("copy");
+    document.body.removeChild(input);
+    autolog.log("复制成功", "success", 2000);
+  }
+  module.copy = copy;
+</script>
