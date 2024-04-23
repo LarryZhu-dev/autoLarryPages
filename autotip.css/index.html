@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <style>
+      body {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: flex-start;
+        padding: 200px;
+        overflow-x: hidden;
+      }
+      .demo {
+        position: absolute;
+        top: 120px;
+        cursor: pointer;
+        display: flex;
+        gap: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo">
+      <span tip="你好，这里是autoTip.css" tip-position="top">
+        autoTip.css
+      </span>
+      <span tip="复制这里安装哦" tip-position="top"> npm i autotip.css </span>
+      <span tip="在css中引入" tip-position="top"
+        >@import 'autotip.css/index.css'</span
+      >
+      <span tip="在js中引入" tip-position="top"
+        >import 'autotip.css/index.css'</span
+      >
+      <span tip="抓住红块中的黑点，算你厉害" tip-position="top">???</span>
+    </div>
+  </body>
+</html>
+<script type="module">
+  // import autotip from '../index.js'
+  let elCount = 130;
+  const position = ["top", "right", "bottom", "left"];
+  let radomPosition = () => {
+    return position[Math.floor(Math.random() * position.length)];
+  };
+  for (let i = 0; i < elCount; i++) {
+    let el = document.createElement("div");
+    el.style.width = "100px";
+    el.style.height = "100px";
+    el.style.backgroundColor = "red";
+    el.style.margin = "10px auto";
+    el.setAttribute(
+      "tip",
+      `你好，我是 Elementa ${i}，hello, I am Elementa ${i}，こんにちは，私はElementa ${i}です，Bonjour, je suis Elementa ${i}，안녕하세요, 나는 Elementa ${i}입니다`
+    );
+    el.setAttribute("tip-position", radomPosition());
+    document.body.appendChild(el);
+  }
+  // autotip.init();
+</script>

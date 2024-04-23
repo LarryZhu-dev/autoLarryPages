@@ -1,0 +1,96 @@
+.autotip {
+  position: fixed;
+  background: #1f1f1f;
+  color: #fff;
+  padding: 5px;
+}
+*[tip] {
+  position: relative;
+}
+*[tip]:hover::before,
+*[tip]:hover::after {
+  opacity: 1;
+}
+*[tip]::before {
+  content: attr(tip);
+  background: #1f1f1f;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.2s;
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 8px);
+  transform: translateY(-50%);
+  width: max-content;
+  max-width: 246px;
+  z-index: 99;
+}
+*[tip]::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 5px);
+  transform: translateY(-50%);
+  margin-left: -5px;
+  border-width: 5px;
+  transition: 0.2s;
+  border-style: solid;
+  pointer-events: none;
+  opacity: 0;
+  border-color: transparent #1f1f1f transparent transparent;
+  z-index: 99;
+}
+*[tip-position="bottom"]::before {
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+*[tip-position="bottom"]::after {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-color: transparent transparent #1f1f1f transparent;
+}
+*[tip-position="top"]::before {
+  top: unset;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+*[tip-position="top"]::after {
+  top: unset;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-color: #1f1f1f transparent transparent transparent;
+}
+*[tip-position="left"]::before {
+  top: 50%;
+  left: unset;
+  right: calc(100% + 8px);
+  transform: translateY(-50%);
+}
+*[tip-position="left"]::after {
+  top: 50%;
+  left: unset;
+  right: calc(100% + 5px);
+  transform: translateY(-50%);
+  margin-left: 0;
+  margin-right: -5px;
+  border-color: transparent transparent transparent #1f1f1f;
+}
+*[tip-position="right"]::before {
+  top: 50%;
+  left: calc(100% + 8px);
+  transform: translateY(-50%);
+}
+*[tip-position="right"]::after {
+  top: 50%;
+  left: calc(100% + 5px);
+  transform: translateY(-50%);
+  margin-left: -5px;
+  border-color: transparent #1f1f1f transparent transparent;
+}
