@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AutoLarry's PlugIn</title>
-    <link rel="shortcut icon" href="./dependens/ico.svg" />
-    <link rel="stylesheet" href="./dependens/index.css" />
-    <script src="https://cdn.jsdelivr.net/npm/autofit.js@3.1.0/autofit.min.js"></script>
-  </head>
-  <body>
-    <div class="main">
-      <div class="logo">
-        <a href="https://github.com/LarryZhu-dev/" target="_blank">
-          <img src="./dependens/ico.svg" alt="" />
-        </a>
-      </div>
-      <div class="productionList">
-        <a href="/autoLarryPages/autofit.js">autofit.js</a>
-        <a href="/autoLarryPages/autolog.js">autolog.js</a>
-        <a href="/autoLarryPages/autotip.css">autotip.css</a>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoLarry's PlugIn</title>
+  <link rel="shortcut icon" href="./dependens/ico.svg" />
+  <link rel="stylesheet" href="./dependens/index.css" />
+  <link rel="stylesheet" href="./autotip.css/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/autofit.js@3.1.0/autofit.min.js"></script>
+  <style>
+    *[tip]::before {
+      color: #000;
+      background-color: #fff;
+    }
+
+    *[tip-position="top"]::after {
+      border-color: #fff transparent transparent transparent;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="logo">
+      <a href="https://github.com/LarryZhu-dev/" target="_blank">
+        <img src="./dependens/ico.svg" alt="" />
+      </a>
     </div>
-  </body>
+    <div class="productionList">
+      <a href="/autoLarryPages/autofit.js" tip="最易用的自适应插件" tip-position="top">autofit.js</a>
+      <a href="/autoLarryPages/autolog.js" tip="命令式、小而美的弹窗组件" tip-position="top">autolog.js</a>
+      <a href="/autoLarryPages/autouno" tip="直觉的 UnoCSS 预设方案" tip-position="top">autouno</a>
+      <a href="/autoLarryPages/autotip.css" tip="你看到的小提示的纯CSS实现方案" tip-position="top">autotip.css</a>
+    </div>
+  </div>
+</body>
+
 </html>
-<script> 
+<script>
   autofit.init({
     limit: 0.2,
   });
