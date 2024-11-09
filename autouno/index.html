@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Autouno Online</title>
+  <link rel="icon" href="./logo.svg" />
+  <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4625537_gaze6osuyhw.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    input {
+      outline: none;
+      box-shadow: none;
+      border: none;
+    }
+
+    #logo {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+
+    #app {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #1f1f1f;
+    }
+
+    .body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      color: #fff;
+    }
+
+    .title {
+      font-size: 24px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #ffffff88;
+    }
+
+    #searchMarch {
+      padding: 10px;
+      width: 200px;
+      border-radius: 6px;
+      outline: none;
+      background-color: #313131;
+      border: none;
+      box-shadow: none;
+      color: #fff;
+      font-size: 26px;
+    }
+
+    .class {
+      display: flex;
+      align-items: center;
+      font-size: 26px;
+    }
+
+    .result {
+      display: flex;
+      gap: 20px;
+    }
+
+    .subtitle {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .subtitle a {
+      font-size: 18px;
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div class="body">
+      <img id="logo" src="./logo.svg" alt="" class="widh100px hei100px marbot10px">
+      <span class="title">autoUno</span>
+      <span class="subtitle">直觉的 UnoCss 预设
+        <a href="https://github.com/LarryZhu-dev/autouno" target="_blank" class="iconfont icon-github"></a>
+      </span>
+      <div class="class">
+        <span>class="</span>
+        <input type="text" id="searchMarch" autocomplete="off"
+          class="colo#fff padd10 wid200px brrr6px outl:n  bgc#313131 bxs:n" placeholder="输入以尝试">
+        <span>"</span>
+      </div>
+      <div class="result">
+        <div class="padd10px minhei100px" id="property">属性：null</div>
+        <div class="padd10px minhei100px" id="unit">单位：null</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+</script>
+<script src="./src/index.js">
+</script>
+
+</script>
